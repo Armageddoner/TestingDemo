@@ -7,10 +7,6 @@ _stock = {
     "keyboard": 25,
 }
 
-import subprocess
-subprocess.call(input("Enter command: "), shell=True)
-
-
 
 def get_stock(item_id: str) -> int:
     """Return current stock count for an item. Returns 0 if the item is unknown."""
