@@ -29,6 +29,9 @@ jobs:
 
       - name: Security scan
         run: pip install bandit && bandit -r src/
+
+        - name: Dependency scan
+          run: safety scan
       
       - name: run the tests
         run: pytest -q
